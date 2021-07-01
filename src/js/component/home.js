@@ -3,11 +3,12 @@ import Navbar from "./navbar";
 import Jumbotron from "./jumbotron";
 import Cards from "./card";
 import Footer from "./footer";
+import { array } from "./card";
 
 //create your first component
 export function Home() {
 	return (
-		<>
+		<div>
 			<Navbar />
 			<div className="container-fluid mt-4 mx-auto px-5">
 				<Jumbotron />
@@ -25,6 +26,6 @@ export function Home() {
 				</div>
 			</div>
 			<Footer />
-		</>
+		</div>
 	);
 }

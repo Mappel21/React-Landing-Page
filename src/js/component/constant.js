@@ -42,3 +42,4 @@ export const array = [
 		goto: "https://www.w3schools.com/"
 	}
 ];
+export default array;
