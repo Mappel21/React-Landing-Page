@@ -2,7 +2,7 @@ import React from "react";
 import { array } from "./constant";
 import PropTypes from "prop-types";
 
-const Cards = (title, image, discription, goTo) => {
+const Cards = ({ title, image, discription, goTo }) => {
 	return (
 		<>
 			<div key={title} className="card">

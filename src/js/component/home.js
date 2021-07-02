@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import Jumbotron from "./jumbotron";
 import Cards from "./card";
 import Footer from "./footer";
-import { array } from "./card";
+import { array } from "./constant";
 
 //create your first component
 export function Home() {
