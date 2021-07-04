@@ -1,31 +1,29 @@
 import React from "react";
 import Navbar from "./navbar";
 import Jumbotron from "./jumbotron";
-import Cards from "./card";
-import Footer from "./footer";
 import { array } from "./constant";
+import Card from "./card";
+import Footer from "./footer";
 
 //create your first component
 export function Home() {
 	return (
-		<div>
+		<>
 			<Navbar />
-			<div className="container-fluid mt-4 mx-auto px-5">
-				<Jumbotron />
-				<div className="container-fluid mb-4 mx-auto px-5 mw-100 ">
-					<div className="card-deck">
-						{array &&
-							array.map(element => (
-								<Cards
-									key={element.title}
-									title={element.image}
-									discription={element.discription}
-								/>
-							))}
-					</div>
-				</div>
+			<Jumbotron />
+			<div className="text-center mt-5 mb-5 row justify-content-center">
+				{array.map(array => (
+					<Card
+						key={array.title}
+						title={array.title}
+						image={array.image}
+						discription={array.discription}
+						goTo={array.goto}
+						button={"Find Out More!"}
+					/>
+				))}
 			</div>
 			<Footer />
-		</div>
+		</>
 	);
 }

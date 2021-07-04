@@ -1,36 +1,31 @@
 import React from "react";
-import { array } from "./constant";
 import PropTypes from "prop-types";
 
-const Cards = ({ title, image, discription, goTo }) => {
+const Card = ({ title, image, discription, goTo, button }) => {
 	return (
-		<>
-			<div key={title} className="card">
-				<img
-					className="card-img-top"
-					src={image}
-					alt="Card image cap"
-				/>
-				<div className="card-body">
-					<h5 className="card-title">{title}</h5>
-					<p className="card-text">{discription}</p>
-				</div>
-				<div className="card-footer d-flex justify-content-center bg-white">
-					<a href={goTo} className="btn btn-primary">
-						Find Out More!
-					</a>
-				</div>
+		<div
+			key={title}
+			className="card"
+			style={{ width: "20rem", marginRight: "10px" }}>
+			<img className="card-img-top" src={image} alt="Card image cap" />
+			<div className="card-body">
+				<h5 className="card-title">{title}</h5>
+				<p className="card-text">{discription}</p>
 			</div>
-
-			<br />
-		</>
+			<div className="card-footer d-flex justify-content-center bg-white">
+				<a href={goTo} className="btn btn-primary">
+					{button}
+				</a>
+			</div>
+		</div>
 	);
 };
 
-Cards.propTypes = {
-	title: PropTypes.object,
-	image: PropTypes.object,
-	discription: PropTypes.object,
-	goTo: PropTypes.object
+Card.propTypes = {
+	title: PropTypes.string,
+	image: PropTypes.string,
+	discription: PropTypes.string,
+	button: PropTypes.string,
+	goTo: PropTypes.string
 };
-export default Cards;
+export default Card;
