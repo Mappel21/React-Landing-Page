@@ -7,7 +7,12 @@ const Card = ({ title, image, discription, goTo, button }) => {
 			key={title}
 			className="card"
 			style={{ width: "20rem", marginRight: "10px" }}>
-			<img className="card-img-top" src={image} alt="Card image cap" />
+			<img
+				className="card-img-top"
+				src={image}
+				alt="Card image cap"
+				height="30%"
+			/>
 			<div className="card-body">
 				<h5 className="card-title">{title}</h5>
 				<p className="card-text">{discription}</p>
