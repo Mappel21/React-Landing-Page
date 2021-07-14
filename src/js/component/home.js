@@ -10,7 +10,9 @@ export function Home() {
 	return (
 		<>
 			<Navbar />
-			<Jumbotron />
+			<div className="d-flex justify-content-center container-fluid">
+				<Jumbotron />
+			</div>
 			<div className="text-center mt-5 mb-5 row justify-content-center">
 				{array.map(array => (
 					<Card

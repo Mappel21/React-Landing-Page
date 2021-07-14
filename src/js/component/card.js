@@ -11,7 +11,7 @@ const Card = ({ title, image, discription, goTo, button }) => {
 				className="card-img-top"
 				src={image}
 				alt="Card image cap"
-				height="30%"
+				height="40%"
 			/>
 			<div className="card-body">
 				<h5 className="card-title">{title}</h5>
