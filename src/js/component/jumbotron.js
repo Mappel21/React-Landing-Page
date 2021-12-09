@@ -2,17 +2,17 @@ import React from "react";
 
 const Jumbotron = () => {
 	return (
-		<div className="jumbotron mt-5 text-left">
-			<h1 className="display-2">A Warm Welcome!</h1>
+		<div className="jumbotron mt-5 text-left" id="video-container">
+			<video id="main-video" loop="true" autoplay="true" muted="true" preload="true">
+				<source src="test.mp4" type="video/mp4"></source>
+				</video>
+			<h1 className="display-2">Matthew Appelbaum</h1>
 			<p className="lead">
-				This is a simple hero unit, a simple jumbotron-style component
-				for calling extra attention to featured content or information.
-				It uses utility className for typography and spacing to space
-				content out within the larger container.
-			</p>
-			<p className="lead">
-				<a className="btn btn-primary btn-lg" href="#" role="button">
-					Call to Action!
+				<a
+					className="btn btn-primary btn-lg"
+					href="mailto:mappel7676@gmail.com"
+					role="button">
+					Contact Me
 				</a>
 			</p>
 		</div>
